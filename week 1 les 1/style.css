@@ -1,0 +1,276 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    background: #16213E;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    background: #0F3460;
+    min-height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    font-size: 130%;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.nav > i{
+    font-size: 200%;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.cta{
+    width: 11rem;
+    padding:1rem;
+    font-size: 80%;
+    background-color: #E94560;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.cta:hover{
+    cursor: pointer;
+    background-color: hsl(350, 79%, 49%);
+    transition: 0.2s;
+}
+
+.banner{
+    height: 86vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner > figure{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgba(22, 33, 62,0.8), 80%, rgba(233, 69, 96,0.8)), url(images/pexels-tanathip-rattanatum-2026451.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.banner > figure > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    gap: 3rem;
+    align-items: center;
+    color: white;
+}
+
+.heading{
+    font-size: 600%;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 200;
+}
+
+.heading2{
+    font-size: 300%;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 200;
+}
+
+.logo{
+    font-size: 350%;
+    color: #eee;
+    border: 0.5rem solid #E94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+
+}
+
+.over{
+    height: auto;
+    padding: 4rem;
+}
+
+.over > header{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.over > header> h2{
+    color: #eee;
+    font-size: 250%;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+
+}
+
+.over > div{
+    height: 50rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.over > div > p{
+    width: 55ch;
+    color: white;
+}
+
+.over > div > img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kenmerken{
+    height: auto;
+    padding: 4rem;
+    background: #0F3460;
+}
+
+.kenmerken > header{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.kenmerken > header> h2{
+    color: #eee;
+    font-size: 250%;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+
+}
+
+.onzeKenmerken{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    width: 40%;
+    flex-shrink: 0;
+    gap: 2rem;
+}
+
+.kenmerk > p{
+    max-width: 30ch;
+}
+
+.kenmerkIcon{
+    font-size: 180%;
+    border: 0.5rem solid #E94560;
+    border-radius: 50%;
+    padding: 2rem;
+}
+
+.gallerij{
+    height: auto;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.gallerij > header{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallerij > header> h2{
+    color: #eee;
+    font-size: 250%;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+
+}
+
+.fotos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.foto{
+    min-width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.foto > section{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(22, 33, 62,0.8), 80%, rgba(233, 69, 96,0.8));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto > section > .cta{
+    opacity: 0; 
+    transition-delay: 0.4s;
+    transition-duration: 0.2s;
+}
+
+.foto:hover > section > .cta{
+    opacity: 1;
+}
+
+
+.foto:hover > section{
+    transform: scaleX(1);
+}
+
+.foto > img{
+    width: 100%;
+    height: 100%;
+}
