@@ -1,0 +1,25 @@
+@use 'colors';
+@use 'fonts';
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a,a:visited, a:link{
+    color: colors.$white;
+    text-decoration: none; 
+}  
+
+body{
+    font-size: 2rem;
+    background: colors.$blue;
+}

@@ -1,0 +1,61 @@
+@use 'colors';
+@use 'fonts';
+@use 'components';
+
+.over{
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: colors.$border_pink_small;
+}
+
+.over__header{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.over__h2{
+    @extend %h2handwriting;
+}
+
+.over__columns{
+    height: 50rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.over__column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over__p{
+    width: 55ch;
+    color: colors.$white;
+}
+
+.over__figure{
+    position: relative;
+    width: 60rem;
+    height: 60rem;
+}
+
+.over__figure::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: colors.$linear_gradient_default;
+}
+
+.over__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

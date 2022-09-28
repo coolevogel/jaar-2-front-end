@@ -1,0 +1,53 @@
+@use 'colors';
+@use 'components';
+
+.nav{
+    display: flex;
+    width: 100%;
+    background: colors.$blue_transparent;
+    min-height: 7rem;
+    justify-content: space-between;
+    align-items: center;
+    color: colors.$white;
+    font-size: 130%;
+    padding: 2rem;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__logo{
+    font-size: 250%;
+    color: colors.$white;
+    border: 0.5rem solid colors.$pink;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.nav__list{
+    display: flex;
+    gap: 3rem;
+    color: colors.$white;
+}
+
+.nav__listItem{
+    color: colors.$white;
+    list-style: none;
+}
+
+.nav__link{
+    color: colors.$white;
+    text-decoration: none;
+}
+
+.nav__button{
+    @extend %button;
+}
+
+.nav__button:hover{
+    cursor: pointer;
+    background-color: darken(colors.$pink, 10);
+    transition: 0.2s;
+}

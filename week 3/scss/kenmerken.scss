@@ -1,0 +1,43 @@
+@use 'fonts';
+@use 'colors';
+@use 'components';
+
+.kenmerken{
+    height: auto;
+    padding: 4rem;
+    background: colors.$blue;
+}
+
+.kenmerken__header{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.kenmerken__h2{
+    @extend %h2handwriting;
+}
+
+.kenmerken__list{
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerken__listitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    width: 40%;
+    flex-shrink: 0;
+    gap: 2rem;
+}

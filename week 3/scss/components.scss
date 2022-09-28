@@ -1,0 +1,20 @@
+@use 'fonts';
+@use 'colors';
+
+%h2handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 380%;
+    color: colors.$white;
+    font-weight: 300;
+}
+
+%button{
+    width: 11rem;
+    padding:1rem;
+    font-size: 80%;
+    background-color: colors.$pink;
+    border: none;
+    color: colors.$white;
+    border-radius: 0.5rem;
+    transition-duration: 0.2s;
+}

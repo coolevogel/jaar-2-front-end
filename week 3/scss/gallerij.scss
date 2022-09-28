@@ -1,0 +1,78 @@
+@use 'fonts';
+@use 'components';
+@use 'colors';
+
+.gallerij{
+    height: auto;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gallerij__header{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallerij__h2{
+    @extend %h2handwriting
+}
+
+.gallerij__fotos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.gallerij__foto{
+    width: 40rem;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.gallerij__foto > img{
+    width: 100%;
+    height: 100%;
+}
+
+.gallerij__foto > section{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: colors.$linear_gradient_default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallerij__foto:hover > section{
+    transform: scaleX(1);
+}
+
+.gallerij__button{
+    @extend %button;
+    opacity: 0; 
+    transition-delay: 0.4s;
+    transition-duration: 0.2s;
+}
+
+.gallerij__foto:hover > section > .gallerij__button{
+    opacity: 1;
+}
