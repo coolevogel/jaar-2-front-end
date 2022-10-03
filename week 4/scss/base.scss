@@ -1,0 +1,11 @@
+@use "colors";
+@use "mixins";
+
+body{
+    background-color: colors.$background;
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+}
