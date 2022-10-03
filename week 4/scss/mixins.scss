@@ -4,3 +4,11 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin rotate($duration){
+    rotate: (360deg);
+    transition: $duration all;
+    transition-timing-function: linear;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}

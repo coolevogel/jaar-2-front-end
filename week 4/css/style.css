@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  background-color: #eee;
+  background-color: #FBF9F1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,16 +26,54 @@ body {
 .header {
   width: 80vw;
   height: 15rem;
-  background: red;
   display: flex;
+  background-color: #FBF9F1;
   align-items: center;
   justify-content: space-between;
   padding: 3rem;
 }
-
+.header__logo {
+  height: 8rem;
+  width: 8rem;
+  font-size: 200%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FBF9F1;
+  background-color: #54BAB9;
+  border: 0.2rem solid #FBF9F1;
+}
+.header__logo:hover {
+  color: #54BAB9;
+  border: 0.2rem dashed #54BAB9;
+  background-color: #FBF9F1;
+  rotate: 360deg;
+  transition: 0.6s all;
+  transition-timing-function: linear;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
 .header__rightWrapper {
   display: flex;
   gap: 2rem;
+}
+.header__avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.header__avatar:hover {
+  rotate: 360deg;
+  transition: 0.4s all;
+  transition-timing-function: linear;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+.header__img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
