@@ -1,14 +1,19 @@
-@use "colors";
-@use 'mixins';
+@use "../../variabelen/mixins.scss";
+@use "../../variabelen/colors.scss";
+@use "../../variabelen/animations.scss";
 
 .header {
     width: 80vw;
-    height: 15rem;
+    max-width: 150rem;
+    min-height: 15rem;
     display: flex;
     background-color: colors.$background;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    @include animations.popup;
 
     &__logo {
         height: 8rem;
@@ -32,7 +37,13 @@
 
     &__rightWrapper {
         display: flex;
-        gap: 2rem;
+        gap: 5rem;
+    }
+
+    &__label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__avatar {

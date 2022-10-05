@@ -12,3 +12,18 @@
     box-sizing: border-box;
     backface-visibility: hidden;
 }
+
+@mixin fontCursive{
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
+}
+
+@mixin fontsansSerif{
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin fontSerif{
+    font-weight: 400;
+    font-family: 'Merriweather', serif;
+}

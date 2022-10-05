@@ -1,3 +1,6 @@
 @use "reset";
 @use "base";
-@use "header";
+@use "./components/header/header";
+@use "./components/showcase/showcase";
+@use "./components/toggle/toggle";
+@use "./variabelen/mediaqueries";

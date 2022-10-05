@@ -1,11 +1,12 @@
-@use "colors";
-@use "mixins";
+@use "variabelen/mixins";
+@use "variabelen/colors";
 
 body{
-    background-color: colors.$background;
+    background: colors.$gradient;
     @include mixins.flexCenter;
     min-height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
     padding: 4rem;
+    font-family: 'Roboto', sans-serif;
 }
