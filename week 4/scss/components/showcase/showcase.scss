@@ -9,7 +9,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem;
     gap: 4rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -37,10 +37,17 @@
         padding: 1rem;
     }
 
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
     &__font{
         font-weight: 400;
         font-size: 150%;
     }
+
 
     &__output{
         font-size: 250%;

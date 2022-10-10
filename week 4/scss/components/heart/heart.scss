@@ -1,0 +1,19 @@
+@use "../../variabelen/mixins.scss";
+@use "../../variabelen/colors.scss";
+@use "../../variabelen/animations.scss";
+
+.heart{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 150%;
+
+    &__logo{
+        color: colors.$accent;
+
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

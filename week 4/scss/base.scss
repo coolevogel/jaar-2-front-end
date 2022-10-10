@@ -1,6 +1,10 @@
 @use "variabelen/mixins";
 @use "variabelen/colors";
 
+*:focus{
+    border: 0.3rem dashed blue;
+}
+
 body{
     background: colors.$gradient;
     @include mixins.flexCenter;
