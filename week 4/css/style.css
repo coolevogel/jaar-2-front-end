@@ -27,6 +27,9 @@ body {
   padding: 4rem;
   font-family: "Roboto", sans-serif;
 }
+body.dark {
+  background: #2C3333;
+}
 
 @keyframes popup {
   from {
@@ -65,6 +68,9 @@ body {
   background-color: #54BAB9;
   border: 0.2rem solid #FBF9F1;
 }
+.header__logo.dark {
+  color: #2C3333;
+}
 .header__logo:hover {
   color: #54BAB9;
   border: 0.2rem dashed #54BAB9;
@@ -74,6 +80,9 @@ body {
   transition-timing-function: linear;
   box-sizing: border-box;
   backface-visibility: hidden;
+}
+.header__logo:hover.dark {
+  background-color: #2C3333;
 }
 .header__rightWrapper {
   display: flex;
@@ -100,6 +109,13 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+.header.dark {
+  background-color: #2C3333;
+}
+
+.header.dark {
+  background-color: #2C3333;
 }
 
 .showcase {

@@ -27,11 +27,19 @@
         background-color: colors.$accent;
         border: 0.2rem solid colors.$background;
 
+        &.dark{
+            color: colors.$background--dark;
+        }
+
         &:hover {
             color: colors.$accent;
             border: 0.2rem dashed colors.$accent;
             background-color: colors.$background;
             @include mixins.rotate(0.6s);
+
+            &.dark{
+                background-color: colors.$background--dark;
+            }
         }
     }
 
@@ -62,4 +70,12 @@
         border-radius: 50%;
     }
 
+    &.dark{
+        background-color: colors.$background--dark;
+    }
+
+}
+
+.header.dark{
+    background-color: colors.$background--dark;
 }

@@ -23,3 +23,12 @@ for(let i = 0; i < hearts.length; i++){
         hearts[i].classList = "fa-solid fa-heart heart__logo";
     }
 }
+
+
+/*darkmode javascript */
+
+const checkbox = document.getElementById("darkmode");
+
+checkbox.addEventListener('change',() => {
+    document.body.classList.toggle("dark")
+});

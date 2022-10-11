@@ -13,4 +13,8 @@ body{
     justify-content: flex-start;
     padding: 4rem;
     font-family: 'Roboto', sans-serif;
+
+    &.dark{
+        background: colors.$background--dark;
+    }
 }
