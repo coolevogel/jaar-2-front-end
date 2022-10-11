@@ -34,7 +34,7 @@
 }
 
 .nav__logo {
-  font-size: 250%;
+  font-size: 150%;
   color: #eee;
   border: 0.5rem solid #E94560;
   border-radius: 50%;
@@ -194,6 +194,7 @@ body {
   height: auto;
   padding: 4rem;
   background: #16213E;
+  border-bottom: 0.2rem solid #E94560;
 }
 
 .kenmerken__header {
@@ -234,6 +235,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  border-bottom: 0.2rem solid #E94560;
 }
 
 .gallerij__header {
@@ -294,6 +296,49 @@ body {
 
 .gallerij__foto:hover > section > .gallerij__button {
   opacity: 1;
+}
+
+.footer {
+  background-color: #343f5d;
+  height: auto;
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.footer__paginas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__h3 {
+  font-family: "Great vibes", recursive;
+  font-weight: 300;
+  font-size: 4rem;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+.footer__listItem {
+  transition-duration: 0.2s;
+}
+.footer__listItem:hover {
+  color: #E94560;
+}
+.footer__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

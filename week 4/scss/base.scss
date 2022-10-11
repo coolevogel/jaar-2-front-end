@@ -14,7 +14,30 @@ body{
     padding: 4rem;
     font-family: 'Roboto', sans-serif;
 
-    &.dark{
-        background: colors.$background--dark;
+    &.dark {
+    }
+
+    &.dark .header{
+        background:colors.$background--dark;
+    }
+
+    &.dark .header__logo{
+        color: colors.$background--dark;
+        border: none;
+
+        &.header__logo:hover{
+            background-color: colors.$background--dark;
+            color: colors.$accent;
+            border: 0.2rem dashed colors.$accent;
+        }
+    }
+
+    &.dark .showcase{
+        background-color: colors.$background--dark;
+        color: colors.$background;
+
+        &__input{
+            color: colors.$background;
+        }
     }
 }

@@ -27,8 +27,24 @@ body {
   padding: 4rem;
   font-family: "Roboto", sans-serif;
 }
-body.dark {
+body.dark .header {
   background: #2C3333;
+}
+body.dark .header__logo {
+  color: #2C3333;
+  border: none;
+}
+body.dark .header__logo.header__logo:hover {
+  background-color: #2C3333;
+  color: #54BAB9;
+  border: 0.2rem dashed #54BAB9;
+}
+body.dark .showcase {
+  background-color: #2C3333;
+  color: #FBF9F1;
+}
+body.dark .showcase__input {
+  color: #FBF9F1;
 }
 
 @keyframes popup {
@@ -68,9 +84,6 @@ body.dark {
   background-color: #54BAB9;
   border: 0.2rem solid #FBF9F1;
 }
-.header__logo.dark {
-  color: #2C3333;
-}
 .header__logo:hover {
   color: #54BAB9;
   border: 0.2rem dashed #54BAB9;
@@ -109,13 +122,6 @@ body.dark {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-}
-.header.dark {
-  background-color: #2C3333;
-}
-
-.header.dark {
-  background-color: #2C3333;
 }
 
 .showcase {

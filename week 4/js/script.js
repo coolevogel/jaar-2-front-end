@@ -30,5 +30,5 @@ for(let i = 0; i < hearts.length; i++){
 const checkbox = document.getElementById("darkmode");
 
 checkbox.addEventListener('change',() => {
-    document.body.classList.toggle("dark")
+    document.querySelector('body').classList.toggle("dark")
 });

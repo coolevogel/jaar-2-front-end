@@ -1,0 +1,52 @@
+@use 'colors';
+@use 'fonts';
+
+.footer{
+    background-color: colors.$lightblue;
+    height: auto;
+    padding: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    &__paginas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__h3{
+        font-family: fonts.$handwriting;
+        font-weight: 300;
+        font-size: 4rem;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        
+    }
+
+    &__listItem{
+        transition-duration: 0.2s;
+
+        &:hover{
+            color: colors.$pink;
+        }
+    }
+
+    &__contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
