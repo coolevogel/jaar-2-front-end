@@ -1,0 +1,11 @@
+@use "./mixins.scss";
+
+body{
+    min-height: 100vh;
+    @include mixins.flex;
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 200%;
+}
