@@ -1,0 +1,100 @@
+@use "../abstracts/variables.scss";
+
+.tasks{
+    background: map-get(variables.$tasksVars, "background");
+    width: 35rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: scroll;
+
+    &--hidden{
+        display: none;
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.1rem 1rem;
+    }
+
+    &__h2{
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    &__headerWrapper{
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+    
+    &__number{
+        background: variables.$backgroundColor;
+        font-size: 90%;
+        padding: 0.5rem;
+        font-weight: 500;
+        color: #eee;
+        border-radius: 0.3rem;
+    }
+
+    &__edit{
+        appearance: none;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 150%;
+        font-family: 'open Sans';
+        line-height: 1;
+        background: none;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
+        &Item{
+            border-radius: 0.3rem;
+            padding: 1rem;
+            background-color: variables.$white;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+
+    &__label{
+        font-weight: 700;
+        background: #2fbe40;
+        border-radius: 0.3rem;
+        padding: 0.3rem 0.5rem;
+        width: min-content;
+        color: #eee;
+
+        &--tomorrow{
+            background: #A03C78;
+        }
+
+        &--weekend{
+            background: rgb(211, 160, 30);
+        }
+
+        &--nextWeek{
+            background: #0E9AA7;
+            width: max-content;
+        }
+
+        &--sometime{
+            background: #C21010;
+        }
+    }
+}

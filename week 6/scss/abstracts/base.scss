@@ -1,0 +1,19 @@
+@use "./variables.scss";
+
+body{
+    font-family: map-get(variables.$fontVars, $key: font);
+    font-size: map-get(variables.$fontVars, $key: size);
+    min-height: 100vh;
+    background-color: variables.$backgroundColor;
+    color: map-get(variables.$fontVars, $key: color);
+    display: flex;
+    overflow-y: hidden;
+}
+
+.main{
+    display: flex;
+    gap: 3rem;
+    flex-shrink: 0;
+    padding: 4rem;
+    max-height: 100vh;
+}
