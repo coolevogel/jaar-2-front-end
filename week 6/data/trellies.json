@@ -1,26 +1,29 @@
 {
     "title": "dababy",
-    "activitiesCount": 10,
     "activities": [
         {
-            "discription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "vandaag"
+            "description": "trellie afmaken",
+            "label": "Vandaag"
         },
         {
-            "discription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "vandaag"
+            "description": "mike stinkt",
+            "label": "Morgen"
         },
         {
-            "discription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "vandaag"
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
+            "label": "Weekend"
         },
         {
-            "discription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "vandaag"
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
+            "label": "Volgende week"
         },
         {
-            "discription": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "vandaag"
+            "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
+            "label": "Ooit"
+        },
+        {
+            "description":"test",
+            "label":"hihihiha"
         }
     ]
 }
