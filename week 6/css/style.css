@@ -88,6 +88,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  box-shadow: 0 0.5rem 0 0 #b9b9b9;
 }
 .tasks__label {
   font-weight: 700;
@@ -109,6 +110,29 @@ html {
 }
 .tasks__label--sometime {
   background: #C21010;
+}
+.tasks__author {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 80%;
+}
+.tasks__authorblue {
+  background-color: #0E9AA7;
+}
+.tasks__authorgreen {
+  background-color: #2fbe40;
+}
+.tasks__authoryellow {
+  background-color: rgb(210, 210, 24);
+}
+.tasks__authorred {
+  background-color: #C21010;
 }
 
 /*# sourceMappingURL=style.css.map */

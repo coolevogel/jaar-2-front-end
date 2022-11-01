@@ -1,29 +1,50 @@
 {
-    "title": "dababy",
+    "title": "jeroen",
     "activities": [
         {
             "description": "trellie afmaken",
-            "label": "Vandaag"
+            "label": "Vandaag",
+            "extraClass": "none",
+            "name": "MGJ",
+            "color": "blue"
+            
         },
         {
             "description": "mike stinkt",
-            "label": "Morgen"
+            "label": "Morgen",
+            "extraClass": "tomorrow",
+            "name": "MGJ",
+            "color": "blue"
+
         },
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "Weekend"
+            "label": "Weekend",
+            "extraClass": "weekend",
+            "name": "JR",
+            "color": "green"
         },
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "Volgende week"
+            "label": "Volgende week",
+            "extraClass": "nextWeek",
+            "name": "MGJ",
+            "color": "yellow"
         },
         {
             "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum explicabo omnis atque in, unde praesentium quisquam sint id velit minus esse, laudantium ipsam accusamus ut molestiae dolore magni rem? Quidem?",
-            "label": "Ooit"
+            "label": "Ooit",
+            "extraClass": "sometime",
+            "name": "MGJ",
+            "color": "red"
         },
         {
-            "description":"test",
-            "label":"hihihiha"
+            "description": "trellie afmaken",
+            "label": "Vandaag",
+            "extraClass": "none",
+            "name": "MGJ",
+            "color": "blue"
+            
         }
     ]
 }

@@ -1,6 +1,6 @@
 @use "../abstracts/variables.scss";
 
-.tasks{
+.tasks {
     background: map-get(variables.$tasksVars, "background");
     width: 35rem;
     padding: 1rem;
@@ -10,29 +10,29 @@
     gap: 2rem;
     overflow-y: scroll;
 
-    &--hidden{
+    &--hidden {
         display: none;
     }
 
-    &__header{
+    &__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0.1rem 1rem;
     }
 
-    &__h2{
+    &__h2 {
         font-size: 100%;
         font-weight: 700;
     }
 
-    &__headerWrapper{
+    &__headerWrapper {
         display: flex;
         gap: 1rem;
         align-items: flex-end;
     }
-    
-    &__number{
+
+    &__number {
         background: variables.$backgroundColor;
         font-size: 90%;
         padding: 0.5rem;
@@ -41,7 +41,7 @@
         border-radius: 0.3rem;
     }
 
-    &__edit{
+    &__edit {
         appearance: none;
         border: none;
         align-items: center;
@@ -51,28 +51,31 @@
         line-height: 1;
         background: none;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
 
-    &__list{
+    &__list {
         list-style: none;
         display: flex;
         gap: 1rem;
         flex-direction: column;
 
-        &Item{
-            border-radius: 0.3rem;
-            padding: 1rem;
-            background-color: variables.$white;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
+
     }
 
-    &__label{
+    &__listItem {
+        border-radius: 0.3rem;
+        padding: 1rem;
+        background-color: variables.$white;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 0 0.5rem 0 0 darken( #ECECEC, $amount: 20%);
+    }
+
+    &__label {
         font-weight: 700;
         background: #2fbe40;
         border-radius: 0.3rem;
@@ -80,21 +83,49 @@
         width: min-content;
         color: #eee;
 
-        &--tomorrow{
+        &--tomorrow {
             background: #A03C78;
         }
 
-        &--weekend{
+        &--weekend {
             background: rgb(211, 160, 30);
         }
 
-        &--nextWeek{
+        &--nextWeek {
             background: #0E9AA7;
             width: max-content;
         }
 
-        &--sometime{
+        &--sometime {
             background: #C21010;
+        }
+    }
+
+    &__author{
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+        font-size: 80%;
+
+        &blue{
+            background-color: #0E9AA7;
+        }
+
+        &green{
+            background-color: #2fbe40;
+        }
+
+        &yellow{
+            background-color: rgb(210, 210, 24);
+        }
+
+        &red{
+            background-color: #C21010;
         }
     }
 }
