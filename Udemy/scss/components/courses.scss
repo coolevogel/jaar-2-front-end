@@ -1,0 +1,121 @@
+.courses{
+    margin-top: 1rem;
+    width: 100vw;
+    max-width: 85rem;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+
+    &>h2{
+        font-size: 230%;
+        color: rgb(24, 24, 24);
+    }
+
+    &>h3{
+        font-size: 120%;
+        font-family: sans-serif;
+        font-weight: 200;
+    }
+
+    &-list{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+        &Item{
+            font-family: sans-serif;
+            font-weight: 700;
+            color: rgb(100, 100, 100);
+
+            &:nth-of-type(1){
+                color: black;
+            }
+        }
+    }
+
+    &-section{
+        padding: 2rem;
+        border: 0.1rem solid rgb(209, 209, 209);
+        height: auto;
+    }
+
+    &-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        &>h3{
+            font-size: 150%;
+            font-family: sans-serif;
+        }
+
+        &>p{
+            font-family: sans-serif;
+            max-width: 90ch;
+            font-weight: 100;
+            color: rgb(61, 61, 61);
+        }
+    }
+
+    &-button{
+        appearance: none;
+        border: 0.1rem solid black;
+        background:none;
+
+        height: 2.5rem;
+        width: 8rem;
+
+        font-size: 90%;
+        font-weight: 700;
+        transition-duration: 0.2s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: darken(white, 10%);
+        }
+    }
+
+    &-wrapper{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-course{
+        height: 10rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: sans-serif;
+        font-size: 85%;
+        margin-bottom: 3.8rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &>img{
+            border-radius: 0.2rem;
+        }
+
+        &>h4{
+            color: rgb(114, 113, 113);
+            font-size: 80%;
+        }
+    }
+
+    &-stars{
+        color: rgb(255, 196, 0);
+    }
+}

@@ -1,0 +1,75 @@
+@use '../variables/colors.scss';
+
+.banner{
+    position: relative;
+    margin-top: 4.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 25rem;
+    width: 100vw;
+    max-width: 85rem;
+    background-image: url(../../images/banner.webp);
+    background-size: cover;
+    background-position: right;
+    padding: 3rem;
+
+    &-button{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+
+        appearance: none;
+        border: none;
+        background-color: rgb(56, 56, 56);
+
+        font-size: 100%;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.2s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: darken(rgb(56, 56, 56), 10%);
+        }
+
+        &:nth-of-type(1){
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+        }
+
+        &:nth-of-type(2){
+            position: absolute;
+            top: 50%;
+            left: calc(100% - 4rem);
+        }
+    }
+
+    &-div{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2rem;
+
+        height: auto;
+        min-height: 10rem;
+        max-width: 60ch;
+
+        background-color: white;
+        box-shadow: 0rem 0rem 1rem rgb(184, 184, 184);
+
+        &>h2{
+            font-size: 230%;
+            color: rgb(24, 24, 24);
+        }
+
+        &>p{
+            font-size: 120%;
+            font-family: sans-serif;
+        }
+    }
+}

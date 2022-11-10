@@ -1,0 +1,322 @@
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  position: absolute;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  box-shadow: 0rem 0rem 1rem;
+  z-index: 1;
+}
+.header-logo {
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+}
+.header-logo:hover {
+  cursor: pointer;
+}
+.header-logo > img {
+  height: auto;
+  width: auto;
+}
+.header-categories {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 80%;
+  font-weight: 500;
+}
+.header-categories:hover {
+  color: rgb(162, 52, 237);
+}
+.header-search {
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+}
+.header-search-input {
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  margin-right: 0.5rem;
+  outline: none;
+}
+.header-search-input:focus {
+  border: none;
+}
+.header-shoppingCart {
+  font-size: 150%;
+  transition-duration: 0.2s;
+}
+.header-shoppingCart:hover {
+  color: rgb(162, 52, 237);
+}
+.header-buttons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header-buttons > button {
+  height: 2.5rem;
+  width: 5rem;
+  appearance: none;
+  border: none;
+  background: none;
+  font-size: 100%;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.header-buttons > button:hover {
+  cursor: pointer;
+}
+.header-buttons > button:nth-of-type(1) {
+  border: 0.1rem solid black;
+}
+.header-buttons > button:nth-of-type(1):hover {
+  background-color: #e6e6e6;
+}
+.header-buttons > button:nth-of-type(2) {
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+.header-buttons > button:nth-of-type(2):hover {
+  background-color: #151515;
+}
+.header-globe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  appearance: none;
+  border: 0.1rem solid black;
+  background: none;
+  font-size: 120%;
+}
+.header-globe:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  margin-top: 4.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 25rem;
+  width: 100vw;
+  max-width: 85rem;
+  background-image: url(../../images/banner.webp);
+  background-size: cover;
+  background-position: right;
+  padding: 3rem;
+}
+.banner-button {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  appearance: none;
+  border: none;
+  background-color: rgb(56, 56, 56);
+  font-size: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+}
+.banner-button:hover {
+  cursor: pointer;
+  background-color: #1f1f1f;
+}
+.banner-button:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+}
+.banner-button:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 4rem);
+}
+.banner-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  height: auto;
+  min-height: 10rem;
+  max-width: 60ch;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem rgb(184, 184, 184);
+}
+.banner-div > h2 {
+  font-size: 230%;
+  color: rgb(24, 24, 24);
+}
+.banner-div > p {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+.courses {
+  margin-top: 1rem;
+  width: 100vw;
+  max-width: 85rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+.courses > h2 {
+  font-size: 230%;
+  color: rgb(24, 24, 24);
+}
+.courses > h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+.courses-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.courses-listItem {
+  font-family: sans-serif;
+  font-weight: 700;
+  color: rgb(100, 100, 100);
+}
+.courses-listItem:nth-of-type(1) {
+  color: black;
+}
+.courses-section {
+  padding: 2rem;
+  border: 0.1rem solid rgb(209, 209, 209);
+  height: auto;
+}
+.courses-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.courses-div > h3 {
+  font-size: 150%;
+  font-family: sans-serif;
+}
+.courses-div > p {
+  font-family: sans-serif;
+  max-width: 90ch;
+  font-weight: 100;
+  color: rgb(61, 61, 61);
+}
+.courses-button {
+  appearance: none;
+  border: 0.1rem solid black;
+  background: none;
+  height: 2.5rem;
+  width: 8rem;
+  font-size: 90%;
+  font-weight: 700;
+  transition-duration: 0.2s;
+}
+.courses-button:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+.courses-wrapper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.courses-course {
+  height: 10rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: sans-serif;
+  font-size: 85%;
+  margin-bottom: 3.8rem;
+}
+.courses-course:hover {
+  cursor: pointer;
+}
+.courses-course > img {
+  border-radius: 0.2rem;
+}
+.courses-course > h4 {
+  color: rgb(114, 113, 113);
+  font-size: 80%;
+}
+.courses-stars {
+  color: rgb(255, 196, 0);
+}
+
+@media all and (max-width: 1000px) {
+  .header-categories {
+    display: none;
+  }
+  .header-search {
+    display: none;
+  }
+  .header {
+    justify-content: center;
+    gap: 3rem;
+  }
+  .courses-course {
+    margin-bottom: 6 rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

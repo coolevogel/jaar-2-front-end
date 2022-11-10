@@ -1,0 +1,17 @@
+@media all and (max-width: 1000px){
+    .header-categories{
+        display: none;
+    }
+
+    .header-search{
+        display: none;
+    }
+    .header{
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .courses-course{
+        margin-bottom: 6 rem;
+    }
+}

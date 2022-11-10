@@ -1,0 +1,136 @@
+@use '../variables/colors.scss';
+
+.header{
+    position: absolute;
+    width: 100vw;
+    height: 4.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+    box-shadow: 0rem 0rem 1rem;
+    z-index: 1;
+
+
+    &-logo{
+        height: 2rem;
+        width: 5rem;
+        display: flex;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &>img{
+            height: auto;
+            width: auto;
+        }
+    }
+
+    &-categories{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 80%;
+        font-weight: 500;
+
+        &:hover{
+            color: colors.$Udemypaars;
+        }
+    }
+
+    &-search{
+        border: 0.1rem solid black;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        gap: 0.5rem;
+
+        &-input{
+            appearance: none;
+            border: none;
+            width: 100%;
+            height: 100%;
+            font-size: 100%;
+            margin-right: 0.5rem;
+            outline: none;
+
+            &:focus{
+                border: none;
+            }
+        }
+    }
+
+    &-shoppingCart{
+        font-size: 150%;
+        transition-duration: 0.2s;
+
+        &:hover{
+            color: colors.$Udemypaars;
+        }
+    }
+
+    &-buttons{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        &>button{
+            height: 2.5rem;
+            width: 5rem;
+            appearance: none;
+            border: none;
+            background: none;
+            font-size: 100%;
+            font-weight: 700;
+            transition: 0.2s;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &:nth-of-type(1){
+                border: 0.1rem solid black;
+                
+                &:hover{
+                    background-color: darken(white, 10%);
+                }
+            }
+
+            &:nth-of-type(2){
+                background-color: rgb(46, 46, 46);
+                color: white;
+
+                &:hover{
+                    background-color: darken(rgb(46, 46, 46), 10%);
+                }
+            }
+        }
+    }
+
+    &-globe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        appearance: none;
+        border: 0.1rem solid black;
+        background: none;
+        font-size: 120%;
+
+        &:hover{
+            background-color: darken(white, 10%);
+            cursor: pointer;
+        }
+    }
+}
