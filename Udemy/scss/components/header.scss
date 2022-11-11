@@ -36,6 +36,8 @@
         font-family: sans-serif;
         font-size: 80%;
         font-weight: 500;
+        color: black;
+        text-decoration: none;
 
         &:hover{
             color: colors.$Udemypaars;
@@ -70,6 +72,8 @@
     &-shoppingCart{
         font-size: 150%;
         transition-duration: 0.2s;
+        color: black;
+        text-decoration: none;
 
         &:hover{
             color: colors.$Udemypaars;

@@ -19,11 +19,6 @@ html {
   font-size: 62, 5%;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .header {
   position: absolute;
   width: 100vw;
@@ -56,6 +51,8 @@ a {
   font-family: sans-serif;
   font-size: 80%;
   font-weight: 500;
+  color: black;
+  text-decoration: none;
 }
 .header-categories:hover {
   color: rgb(162, 52, 237);
@@ -85,6 +82,8 @@ a {
 .header-shoppingCart {
   font-size: 150%;
   transition-duration: 0.2s;
+  color: black;
+  text-decoration: none;
 }
 .header-shoppingCart:hover {
   color: rgb(162, 52, 237);
@@ -280,19 +279,20 @@ a {
   flex-wrap: wrap;
 }
 .courses-course {
-  height: 10rem;
+  height: auto;
   width: 15rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   font-family: sans-serif;
   font-size: 85%;
-  margin-bottom: 3.8rem;
 }
 .courses-course:hover {
   cursor: pointer;
 }
 .courses-course > img {
+  padding: 0;
+  border: 0.1rem solid black;
   border-radius: 0.2rem;
 }
 .courses-course > h4 {
@@ -303,7 +303,315 @@ a {
   color: rgb(255, 196, 0);
 }
 
+.splitter {
+  background-color: #e9e9e9;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.splitter-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: sans-serif;
+  max-width: 35ch;
+}
+.splitter-div > h3 {
+  font-size: 90%;
+}
+.splitter-div > i {
+  background-color: rgb(206, 206, 206);
+  font-size: 140%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: 3.5rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.viewing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 3rem;
+  width: 70vw;
+}
+.viewing-h2 {
+  font-family: sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.viewingcourses-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.categories {
+  padding: 5rem 15rem;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.categories-h2 {
+  font-size: 200%;
+  font-family: sans-serif;
+}
+.categories-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.categories-article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.categories-article:hover .categories-img {
+  transform: scale(1, 1);
+}
+.categories-category {
+  height: 20rem;
+  width: 20rem;
+  background-color: #f8fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categories-h3 {
+  font-family: sans-serif;
+}
+
+.featured {
+  padding: 5rem 15rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #e9e9e9;
+}
+.featured > h3 {
+  font-family: sans-serif;
+  font-size: 150%;
+}
+.featured-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15%;
+  flex-wrap: wrap;
+}
+.featured-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 3rem;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.featured-listItem {
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.featured-listItem > a {
+  color: rgb(162, 52, 237);
+}
+.featured-listItem > a:hover {
+  color: #6c0fac;
+}
+.featured-studentCount {
+  color: gray;
+  font-size: 80%;
+}
+.featured-button {
+  height: auto;
+  padding: 1rem;
+  appearance: none;
+  border: 0.1rem solid black;
+  background-color: white;
+  width: max-content;
+  font-weight: 800;
+  transition-duration: 0.2s;
+}
+.featured-button:hover {
+  background-color: #e6e6e6;
+}
+
+.advertisement {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.advertisement > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.advertisement > div > h2 {
+  font-size: 270%;
+  color: rgb(53, 53, 53);
+}
+.advertisement-p {
+  max-width: 40ch;
+  font-size: 150%;
+  font-family: sans-serif;
+}
+.advertisement-button {
+  height: auto;
+  width: max-content;
+  padding: 1rem;
+  appearance: none;
+  border: none;
+  background-color: rgb(44, 44, 44);
+  font-size: 120%;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s;
+}
+.advertisement-button:hover {
+  background-color: #131313;
+}
+
+.udemy-business {
+  height: 3rem;
+  width: 17rem;
+}
+
+.brands {
+  background-color: #e9e9e9;
+  height: auto;
+  padding: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.brands-h2 {
+  font-size: 200%;
+}
+.brands-p {
+  color: rgb(104, 104, 104);
+  font-size: 100%;
+  font-family: sans-serif;
+}
+.brands-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.brands-img {
+  height: 5rem;
+  width: 11rem;
+}
+
+.footer {
+  background-color: #1c1d1f;
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 12rem 7rem;
+  flex-wrap: wrap;
+}
+.footer-div1 {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.footer-div2 {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.footer-div2 > button {
+  appearance: none;
+  height: auto;
+  width: max-content;
+  font-size: 100%;
+  border: 0.1rem solid white;
+  color: white;
+  background: none;
+  padding: 0.5rem 1rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.footer-div3 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0;
+}
+.footer-div3 > img {
+  transform: scale(0.6, 0.6);
+}
+.footer-div4 {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footer-div4 > h4 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.footerlist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  font-family: sans-serif;
+  color: white;
+  font-size: 100%;
+  margin-left: 1rem;
+}
+.footerlistItem:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media all and (max-width: 1000px) {
+  .header-shoppingCart {
+    display: none;
+  }
   .header-categories {
     display: none;
   }
@@ -314,8 +622,11 @@ a {
     justify-content: center;
     gap: 3rem;
   }
-  .courses-course {
-    margin-bottom: 6 rem;
+  .featured-wrapper {
+    gap: 5rem;
+  }
+  .footer-div2 > button {
+    display: none;
   }
 }
 

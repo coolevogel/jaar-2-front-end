@@ -1,0 +1,37 @@
+@use '../variables/colors.scss';
+
+.splitter{
+    background-color: colors.$lightgray;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    &-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-family: sans-serif;
+        max-width: 35ch;
+
+        &>h3{
+            font-size: 90%;
+        }
+
+        &>i{
+            background-color: rgb(206, 206, 206);
+            font-size: 140%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            height: 3.5rem;
+            width: 4rem;
+            border-radius: 50%;
+        }
+    }
+}

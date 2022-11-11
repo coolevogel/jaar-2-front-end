@@ -1,0 +1,38 @@
+@use '../variables/colors.scss';
+
+.brands{
+    background-color: colors.$lightgray;
+    height: auto;
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &-h2{
+        font-size: 200%;
+    }
+
+    &-p{
+        color: rgb(104, 104, 104);
+        font-size: 100%;
+        font-family: sans-serif;
+    }
+
+    &-brands{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &-img{
+        height: 5rem;
+        width: 11rem;
+    }
+}

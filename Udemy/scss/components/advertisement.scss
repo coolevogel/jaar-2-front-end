@@ -1,0 +1,49 @@
+.advertisement{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+    &>div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &>div>h2{
+        font-size: 270%;
+        color: rgb(53, 53, 53);
+    }
+    
+    &-p{
+        max-width: 40ch;
+        font-size: 150%;
+        font-family: sans-serif;
+    }
+
+    &-button{
+        height: auto;
+        width: max-content;
+        padding: 1rem;
+        appearance: none;
+        border: none;
+        background-color: rgb(44, 44, 44);
+        font-size: 120%;
+        font-weight: 600;
+        color: white;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: darken(rgb(44, 44, 44), 10%);
+        }
+    }
+}
+
+.udemy-business{
+    height: 3rem;
+    width: 17rem;
+}

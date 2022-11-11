@@ -1,4 +1,8 @@
 @media all and (max-width: 1000px){
+    .header-shoppingCart{
+        display: none;
+    }
+
     .header-categories{
         display: none;
     }
@@ -11,7 +15,11 @@
         gap: 3rem;
     }
 
-    .courses-course{
-        margin-bottom: 6 rem;
+    .featured-wrapper{
+        gap: 5rem;
+    }
+
+    .footer-div2>button{
+        display: none;
     }
 }
